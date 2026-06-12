@@ -1,0 +1,383 @@
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ESTILOS GENERALES */
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Playfair Display', serif;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #f3eee6;
+    color: #2d241b;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* CABECERA */
+.cabecera-noticias {
+    position: relative;
+    width: 100%;
+    height: 42vh;
+    overflow: hidden;
+    background-color: #b7b1aa;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.08);
+    z-index: 1;
+}
+
+/* LOGO */
+.logo-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+.logo-btn img {
+    width: 78px;
+    height: auto;
+}
+
+/* MENÚ */
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 105px;
+    padding: 28px 40px 28px 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.24);
+    z-index: 999;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 48px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+.menu ul li a:hover {
+    color: #d5b78a;
+}
+
+.menu ul li a:visited {
+    color: #ffffff;
+}
+
+/* TEXTO CABECERA */
+.hero-content {
+    position: absolute;
+    top: 56%;
+    left: 50%;
+    width: 90%;
+    max-width: 760px;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #ffffff;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    line-height: 1.1;
+}
+
+.hero-content p {
+    max-width: 620px;
+    margin: 0 auto;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+/* CONTENIDO */
+main {
+    background-color: #f3eee6;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.subtitulo {
+    display: inline-block;
+    margin-bottom: 14px;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #8a6a45;
+}
+
+/* INTRO */
+.intro-noticias {
+    padding: 100px 5% 80px 5%;
+    text-align: center;
+    background-color: #f3eee6;
+}
+
+.intro-noticias .contenedor {
+    max-width: 760px;
+}
+
+.intro-noticias h2 {
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+    line-height: 1.15;
+}
+
+.intro-noticias p {
+    font-size: 1.05rem;
+    line-height: 1.9;
+}
+
+/* GRID DE NOTICIAS */
+.seccion-noticias {
+    padding: 20px 5% 100px 5%;
+    background-color: #f3eee6;
+}
+
+.contenedor-grid {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.tarjeta-noticia {
+    background-color: #f8f4ed;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(47, 36, 24, 0.08);
+}
+
+.tarjeta-noticia img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+.contenido-noticia {
+    padding: 24px;
+}
+
+.fecha-noticia {
+    margin-bottom: 12px;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #8a6a45;
+}
+
+.contenido-noticia h3 {
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+    line-height: 1.2;
+    color: #2d241b;
+}
+
+.contenido-noticia p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #2d241b;
+}
+
+/* BLOQUE DESTACADO */
+.bloque-destacado {
+    padding: 100px 5%;
+    background-color: #2f2418;
+    color: #f8f3eb;
+}
+
+.bloque-destacado .contenedor {
+    max-width: 760px;
+}
+
+.bloque-destacado .subtitulo {
+    color: #f3d9b2;
+}
+
+.bloque-destacado h2 {
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+    line-height: 1.15;
+}
+
+.bloque-destacado p {
+    font-size: 1.05rem;
+    line-height: 1.9;
+}
+
+/* CIERRE */
+.cierre-noticias {
+    padding: 100px 5%;
+    text-align: center;
+    background-color: #f8f4ed;
+}
+
+.cierre-noticias .contenedor {
+    max-width: 760px;
+}
+
+.cierre-noticias h2 {
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+    line-height: 1.15;
+}
+
+.cierre-noticias p {
+    font-size: 1.05rem;
+    line-height: 1.9;
+    margin-bottom: 30px;
+}
+
+.boton-home {
+    display: inline-block;
+    padding: 14px 28px;
+    background-color: #2f2418;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 999px;
+    font-size: 1rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+}
+
+.boton-home:hover {
+    background-color: #8a6a45;
+}
+
+/* TABLET */
+@media (max-width: 900px) {
+    .menu {
+        min-height: 95px;
+        padding: 24px 20px;
+        justify-content: center;
+    }
+
+    .menu ul {
+        gap: 22px;
+    }
+
+    .menu ul li a {
+        font-size: 0.92rem;
+    }
+
+    .logo-btn img {
+        width: 68px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.3rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .contenedor-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .intro-noticias h2,
+    .bloque-destacado h2,
+    .cierre-noticias h2 {
+        font-size: 2rem;
+    }
+}
+
+/* MÓVIL */
+@media (max-width: 600px) {
+    .cabecera-noticias {
+        height: 38vh;
+    }
+
+    .menu {
+        min-height: 120px;
+        padding: 20px 15px;
+    }
+
+    .menu ul {
+        gap: 14px;
+        justify-content: center;
+    }
+
+    .menu ul li a {
+        font-size: 0.8rem;
+    }
+
+    .hero-content {
+        width: 92%;
+        top: 58%;
+    }
+
+    .hero-content h1 {
+        font-size: 1.9rem;
+    }
+
+    .hero-content p {
+        font-size: 0.95rem;
+    }
+
+    .intro-noticias,
+    .seccion-noticias,
+    .bloque-destacado,
+    .cierre-noticias {
+        padding: 80px 5% 65px 5%;
+    }
+
+    .intro-noticias h2,
+    .bloque-destacado h2,
+    .cierre-noticias h2 {
+        font-size: 1.7rem;
+    }
+
+    .intro-noticias p,
+    .contenido-noticia p,
+    .bloque-destacado p,
+    .cierre-noticias p {
+        font-size: 0.98rem;
+    }
+
+    .contenido-noticia h3 {
+        font-size: 1.3rem;
+    }
+
+    .tarjeta-noticia img {
+        height: 220px;
+    }
+}

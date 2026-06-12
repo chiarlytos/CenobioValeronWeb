@@ -1,0 +1,373 @@
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ESTILOS GENERALES */
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Playfair Display', serif;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #f3eee6;
+    color: #2d241b;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* CABECERA DE LA SUBPÁGINA */
+.cabecera-contacto {
+    position: relative;
+    width: 100%;
+    height: 52vh;
+    background-image: url("../../../imagenes/1.jpg");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+/* LOGO */
+.logo-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+.logo-btn img {
+    width: 78px;
+    height: auto;
+}
+
+/* MENÚ */
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 105px;
+    padding: 28px 40px 28px 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.24);
+    z-index: 999;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 48px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+.menu ul li a:hover {
+    color: #d5b78a;
+}
+
+.menu ul li a:visited {
+    color: #ffffff;
+}
+
+/* CAPA OSCURA DE LA CABECERA */
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.38);
+    z-index: 1;
+}
+
+/* TEXTO DE LA CABECERA */
+.hero-content {
+    position: absolute;
+    top: 56%;
+    left: 50%;
+    width: 90%;
+    max-width: 760px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    line-height: 1.1;
+}
+
+.hero-content p {
+    max-width: 620px;
+    margin: 0 auto;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+/* CONTENIDO PRINCIPAL */
+main {
+    background-color: #f3eee6;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.subtitulo {
+    display: inline-block;
+    margin-bottom: 14px;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #8a6a45;
+}
+
+/* INTRO */
+.intro-contacto {
+    padding: 80px 5% 50px 5%;
+    text-align: center;
+    background-color: #f3eee6;
+}
+
+.intro-contacto .contenedor {
+    max-width: 700px;
+}
+
+.intro-contacto h2 {
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+    line-height: 1.15;
+}
+
+.intro-contacto p {
+    font-size: 1.05rem;
+    line-height: 1.9;
+}
+
+/* BLOQUE CONTACTO */
+.bloque-contacto {
+    padding: 20px 5% 100px 5%;
+    background-color: #f3eee6;
+}
+
+.contenedor-flex {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+}
+
+.texto-contacto {
+    flex: 1;
+    max-width: 520px;
+}
+
+.texto-contacto h2,
+.cierre-contacto h2 {
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+    line-height: 1.15;
+}
+
+.texto-contacto p,
+.cierre-contacto p {
+    font-size: 1.05rem;
+    line-height: 1.9;
+    margin-bottom: 15px;
+}
+
+.formulario-contacto {
+    flex: 1;
+    max-width: 560px;
+}
+
+/* FORMULARIO */
+.formulario-contacto form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.formulario-contacto label {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #2d241b;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #c8b8a4;
+    border-radius: 12px;
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    background-color: #ffffff;
+    color: #2d241b;
+}
+
+.formulario-contacto input:focus,
+.formulario-contacto textarea:focus {
+    outline: none;
+    border-color: #8a6a45;
+}
+
+.formulario-contacto textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+/* CIERRE */
+.cierre-contacto {
+    padding: 90px 5%;
+    text-align: center;
+    background-color: #f8f4ed;
+}
+
+.cierre-contacto .contenedor {
+    max-width: 700px;
+}
+
+.boton-home {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 14px 28px;
+    background-color: #2f2418;
+    color: #ffffff;
+    text-decoration: none;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+}
+
+.boton-home:hover {
+    background-color: #8a6a45;
+}
+
+/* RESPONSIVE TABLET */
+@media (max-width: 900px) {
+    .cabecera-contacto {
+        height: 46vh;
+    }
+
+    .menu {
+        min-height: 95px;
+        padding: 24px 20px;
+        justify-content: center;
+    }
+
+    .menu ul {
+        gap: 22px;
+    }
+
+    .menu ul li a {
+        font-size: 0.92rem;
+    }
+
+    .logo-btn img {
+        width: 68px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.3rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .contenedor-flex {
+        flex-direction: column;
+    }
+
+    .texto-contacto,
+    .formulario-contacto {
+        max-width: 100%;
+    }
+
+    .intro-contacto h2,
+    .texto-contacto h2,
+    .cierre-contacto h2 {
+        font-size: 2rem;
+    }
+}
+
+/* RESPONSIVE MÓVIL */
+@media (max-width: 600px) {
+    .cabecera-contacto {
+        height: 42vh;
+    }
+
+    .menu {
+        min-height: 120px;
+        padding: 20px 15px;
+    }
+
+    .menu ul {
+        gap: 14px;
+        justify-content: center;
+    }
+
+    .menu ul li a {
+        font-size: 0.8rem;
+    }
+
+    .hero-content {
+        width: 92%;
+        top: 58%;
+    }
+
+    .hero-content h1 {
+        font-size: 1.9rem;
+    }
+
+    .hero-content p {
+        font-size: 0.95rem;
+    }
+
+    .intro-contacto,
+    .bloque-contacto,
+    .cierre-contacto {
+        padding: 70px 5%;
+    }
+
+    .intro-contacto h2,
+    .texto-contacto h2,
+    .cierre-contacto h2 {
+        font-size: 1.7rem;
+    }
+
+    .intro-contacto p,
+    .texto-contacto p,
+    .cierre-contacto p {
+        font-size: 0.98rem;
+    }
+}

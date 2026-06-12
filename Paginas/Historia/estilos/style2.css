@@ -1,0 +1,376 @@
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ESTILOS GENERALES */
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Playfair Display', serif;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #f3eee6;
+    color: #2d241b;
+}
+
+img, video {
+    max-width: 100%;
+    display: block;
+}
+
+/* CABECERA DE LA SUBPÁGINA */
+.cabecera-pagina {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    background-image: url("../../../imagenes/Cuevas_cenobio_de_valerón.jpg");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+/* MENÚ SUPERIOR */
+.barra-superior {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 105px;
+    padding: 28px 40px 28px 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.24);
+    z-index: 999;
+}
+
+.logo-pagina {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+.logo-pagina img {
+    width: 78px;
+    height: auto;
+}
+
+.menu-pagina ul {
+    list-style: none;
+    display: flex;
+    gap: 48px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-pagina ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+.menu-pagina ul li a:hover {
+    color: #d5b78a;
+}
+
+.menu-pagina ul li a:visited {
+    color: #ffffff;
+}
+
+/* CAPA OSCURA DE LA CABECERA */
+.capa-cabecera {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 1;
+}
+
+/* TEXTO DE LA CABECERA */
+.contenido-cabecera {
+    position: absolute;
+    top: 56%;
+    left: 50%;
+    width: 90%;
+    max-width: 800px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+    z-index: 2;
+}
+
+.contenido-cabecera h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    line-height: 1.1;
+}
+
+.contenido-cabecera p {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+/* CONTENEDOR GENERAL */
+.contenedor {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* SUBTÍTULOS */
+.subtitulo {
+    display: inline-block;
+    margin-bottom: 14px;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #8a6a45;
+}
+
+/* SECCIONES NORMALES */
+.seccion-historia {
+    padding: 100px 5%;
+    background-color: #f3eee6;
+    color: #2d241b;
+}
+
+.seccion-historia h2 {
+    font-size: 2.5rem;
+    margin-bottom: 22px;
+    line-height: 1.12;
+}
+
+.seccion-historia p {
+    font-size: 1.05rem;
+    line-height: 1.9;
+}
+
+/* BLOQUE CON TEXTO E IMAGEN */
+.contenedor-flex {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+
+.texto-historia {
+    flex: 1;
+    max-width: 500px;
+}
+
+.imagen-historia {
+    flex: 1;
+    max-width: 560px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-historia img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 18px;
+}
+
+/* SECCIÓN DESTACADA */
+.seccion-destacada {
+    padding: 100px 5%;
+    background-color: #2f2418;
+    color: #f8f3eb;
+}
+
+.seccion-destacada .subtitulo {
+    color: #f3d9b2;
+}
+
+.seccion-destacada h2 {
+    font-size: 2.5rem;
+    margin-bottom: 22px;
+    line-height: 1.12;
+}
+
+.seccion-destacada p {
+    font-size: 1.05rem;
+    line-height: 1.9;
+}
+
+/* BLOQUE DESTACADO CON IMAGEN */
+.contenedor-destacado {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+}
+
+.texto-destacado {
+    flex: 1;
+    max-width: 560px;
+}
+
+.imagen-cronologia {
+    flex: 1;
+    max-width: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.imagen-cronologia img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 18px;
+}
+
+/* PIE DE PÁGINA */
+.pie-pagina {
+    padding: 60px 5%;
+    background-color: #1f1812;
+    color: #ffffff;
+    text-align: center;
+}
+
+.pie-pagina .contenedor {
+    max-width: 700px;
+}
+
+.pie-pagina p {
+    margin-bottom: 18px;
+    font-size: 1rem;
+}
+
+.pie-pagina a {
+    display: inline-block;
+    padding: 14px 28px;
+    background-color: #2f2418;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 999px;
+}
+
+.pie-pagina a:hover {
+    background-color: #8a6a45;
+}
+
+/* RESPONSIVE TABLET */
+@media (max-width: 900px) {
+    .barra-superior {
+        min-height: 95px;
+        padding: 24px 20px;
+        justify-content: center;
+    }
+
+    .menu-pagina ul {
+        justify-content: center;
+        gap: 22px;
+    }
+
+    .menu-pagina ul li a {
+        font-size: 0.92rem;
+    }
+
+    .logo-pagina img {
+        width: 68px;
+    }
+
+    .cabecera-pagina {
+        height: 60vh;
+    }
+
+    .contenido-cabecera h1 {
+        font-size: 2.3rem;
+    }
+
+    .contenido-cabecera p {
+        font-size: 1rem;
+    }
+
+    .contenedor-flex,
+    .contenedor-destacado {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .texto-historia,
+    .imagen-historia,
+    .texto-destacado,
+    .imagen-cronologia {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .seccion-historia h2,
+    .seccion-destacada h2 {
+        font-size: 2rem;
+    }
+}
+
+/* RESPONSIVE MÓVIL */
+@media (max-width: 600px) {
+    .barra-superior {
+        min-height: 120px;
+        padding: 20px 15px;
+    }
+
+    .menu-pagina ul {
+        gap: 14px;
+    }
+
+    .menu-pagina ul li a {
+        font-size: 0.8rem;
+    }
+
+    .cabecera-pagina {
+        height: 50vh;
+    }
+
+    .contenido-cabecera {
+        width: 92%;
+        top: 58%;
+    }
+
+    .contenido-cabecera h1 {
+        font-size: 1.9rem;
+    }
+
+    .contenido-cabecera p {
+        font-size: 0.95rem;
+    }
+
+    .seccion-historia,
+    .seccion-destacada {
+        padding: 80px 5% 65px 5%;
+    }
+
+    .seccion-historia h2,
+    .seccion-destacada h2 {
+        font-size: 1.7rem;
+    }
+
+    .seccion-historia p,
+    .seccion-destacada p {
+        font-size: 0.98rem;
+    }
+}

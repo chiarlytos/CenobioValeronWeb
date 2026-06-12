@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Cenobio de Valerón</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style6.css">
+</head>
+<body>
+
+    <header class="cabecera-contacto" id="inicio">
+        <a href="../../index.html" class="logo-btn">
+            <img src="../../imagenes/cenobio_logo_transparente.png" alt="Logotipo del Cenobio de Valerón">
+        </a>
+
+        <nav class="menu">
+            <ul>
+                <li><a href="../../index.html">Inicio</a></li>
+                <li><a href="../Historia/Historia.html">Historia</a></li>
+                <li><a href="../Galeria/Galeria.html">Galería</a></li>
+                <li><a href="../Visita/visita.html">Visita</a></li>
+                <li><a href="../Ubicacion/ubicacion.html">Ubicación</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div class="overlay"></div>
+
+        <div class="hero-content">
+            <h1>Contacto</h1>
+            <p>
+                Si deseas más información sobre este proyecto web o realizar una consulta,
+                puedes contactar a través del siguiente formulario.
+            </p>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro-contacto">
+            <div class="contenedor">
+                <p class="subtitulo">Comunicación directa</p>
+                <h2>¿Hablamos?</h2>
+                <p>
+                    Esta página de contacto permite enviar un mensaje de forma directa para
+                    resolver dudas, compartir sugerencias o ampliar información sobre el
+                    proyecto web dedicado al Cenobio de Valerón.
+                </p>
+            </div>
+        </section>
+
+        <section class="bloque-contacto">
+            <div class="contenedor-flex">
+                <div class="texto-contacto">
+                    <p class="subtitulo">Datos de contacto</p>
+                    <h2>Información de contacto</h2>
+                    <p><strong>Responsable del proyecto:</strong> Carlos Elías Suárez Álamo</p>
+                    <p><strong>Correo electrónico:</strong> Carlossacontacto@gmail.com</p>
+                    <p><strong>Numero Movil:</strong> 652 082 656</p>
+                    <p>
+                        Puedes escribir para resolver dudas, aportar sugerencias o solicitar
+                        más información relacionada con esta web.
+                    </p>
+                </div>
+
+                <div class="formulario-contacto">
+                    <form action="mailto:Carlossacontacto@gmail.com" method="post" enctype="text/plain">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="Nombre" required>
+
+                        <label for="correo">Correo electrónico</label>
+                        <input type="email" id="correo" name="Correo" required>
+
+                        <label for="asunto">Asunto</label>
+                        <input type="text" id="asunto" name="Asunto" required>
+
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="Mensaje" rows="6" required></textarea>
+
+                        <button type="submit" class="boton-home">Enviar mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="cierre-contacto">
+            <div class="contenedor">
+                <h2>Gracias por visitar esta web</h2>
+                <p>
+                    Este proyecto busca acercar el valor histórico y patrimonial del Cenobio
+                    de Valerón a través de una experiencia web clara, visual y accesible.
+                </p>
+                <a href="#inicio" class="boton-home">Volver arriba</a>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,246 @@
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ESTILOS GENERALES */
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Playfair Display', serif;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #f3eee6;
+    color: #2d241b;
+}
+
+img, video {
+    max-width: 100%;
+    display: block;
+}
+
+/* CABECERA */
+.cabecera-galeria {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    overflow: hidden;
+    
+    background-size: cover;
+    background-position: center;
+}
+
+/* QUITAR FONDO GRIS */
+.overlay {
+    display: none;
+}
+
+/* LOGO */
+.logo-btn {
+    position: fixed;
+    top: 25px;
+    left: 25px;
+    z-index: 1000;
+}
+
+.logo-btn img {
+    width: 90px;
+    height: auto;
+}
+
+/* MENÚ CENTRADO */
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 120px;
+    padding: 40px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.18);
+    z-index: 999;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+}
+
+.menu ul li a:hover {
+    color: #d5b78a;
+}
+
+/* QUITAR TEXTO DE CABECERA */
+.hero-content {
+    display: none;
+}
+
+/* CONTENIDO */
+main {
+    background-color: #f3eee6;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.intro-galeria {
+    padding: 60px 5% 80px 5%;
+    background-color: #f3eee6;
+    color: #2d241b;
+}
+
+.intro-galeria .contenedor {
+    max-width: 700px;
+    text-align: center;
+}
+
+.intro-galeria h2 {
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+    line-height: 1.15;
+}
+
+.intro-galeria p {
+    font-size: 1.05rem;
+    line-height: 1.9;
+}
+
+/* REJILLA DE GALERÍA */
+.rejilla-galeria {
+    padding: 0 5% 100px 5%;
+    background-color: #f3eee6;
+}
+
+.contenedor-galeria {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.item-galeria {
+    width: calc(50% - 15px);
+    background-color: #ffffff;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.item-galeria img,
+.item-galeria video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* CIERRE */
+.cierre-galeria {
+    padding: 100px 5%;
+    text-align: center;
+    background-color: #f8f4ed;
+    color: #2d241b;
+}
+
+.cierre-galeria .contenedor {
+    max-width: 700px;
+}
+
+.cierre-galeria h2 {
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+    line-height: 1.15;
+}
+
+.cierre-galeria p {
+    font-size: 1.05rem;
+    line-height: 1.9;
+    margin-bottom: 30px;
+}
+
+.boton-home {
+    display: inline-block;
+    padding: 14px 28px;
+    background-color: #2f2418;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 999px;
+}
+
+.boton-home:hover {
+    background-color: #8a6a45;
+}
+
+/* TABLET */
+@media (max-width: 900px) {
+    .menu {
+        padding: 95px 20px 20px 20px;
+    }
+
+    .menu ul {
+        gap: 18px;
+    }
+
+    .logo-btn img {
+        width: 75px;
+    }
+
+    .intro-galeria,
+    .cierre-galeria {
+        padding: 80px 5% 80px 5%;
+    }
+
+    .intro-galeria h2,
+    .cierre-galeria h2 {
+        font-size: 2rem;
+    }
+
+    .item-galeria {
+        width: 100%;
+    }
+}
+
+/* MÓVIL */
+@media (max-width: 600px) {
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro-galeria,
+    .cierre-galeria {
+        padding: 90px 5% 65px 5%;
+    }
+
+    .intro-galeria h2,
+    .cierre-galeria h2 {
+        font-size: 1.7rem;
+    }
+
+    .intro-galeria p,
+    .cierre-galeria p {
+        font-size: 0.98rem;
+    }
+}
